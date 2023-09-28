@@ -16,7 +16,10 @@ app.set("view engine", "ejs");
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://mern-quiz-app-qfsu.onrender.com",
+    ],
   })
 );
 app.use(logger("dev"));
